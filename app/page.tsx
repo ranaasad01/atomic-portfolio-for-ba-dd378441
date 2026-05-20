@@ -1,6 +1,7 @@
 export const dynamic = "force-dynamic";
 import Link from "next/link";
-import { ArrowRight, Download, Briefcase as Linkedin, Code2 as Github, Mail, CheckCircle, Award, Users, TrendingUp, Star, MapPin, Clock } from 'lucide-react';
+import { ArrowRight, Download, Mail, CheckCircle, Award, Users, TrendingUp, Star, MapPin, Clock } from 'lucide-react';
+import { LinkedinIcon, GithubIcon } from "@/components/icons/SocialIcons";
 
 /* ─── DATA ─────────────────────────────────────────────────── */
 
@@ -154,12 +155,10 @@ export default function HomePage() {
 
       {/* ── HERO ─────────────────────────────────────────────── */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background blobs */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-700/10 rounded-full blur-3xl" />
           <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-primary-500/8 rounded-full blur-3xl" />
         </div>
-        {/* Grid overlay */}
         <div
           className="absolute inset-0 opacity-[0.03]"
           style={{
@@ -225,24 +224,33 @@ export default function HomePage() {
                 </a>
               </div>
 
-              {/* Social */}
+              {/* Social links */}
               <div className="flex items-center justify-center lg:justify-start gap-3">
-                {[
-                  { href: "https://linkedin.com", Icon: Linkedin, label: "LinkedIn" },
-                  { href: "https://github.com", Icon: Github, label: "GitHub" },
-                  { href: "mailto:alexandra.blake@email.com", Icon: Mail, label: "Email" },
-                ].map(({ href, Icon, label }) => (
-                  <a
-                    key={label}
-                    href={href}
-                    target={href.startsWith("http") ? "_blank" : undefined}
-                    rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
-                    aria-label={label}
-                    className="w-10 h-10 rounded-lg bg-slate-800 hover:bg-primary-700 flex items-center justify-center text-slate-400 hover:text-white transition-all duration-200"
-                  >
-                    <Icon size={18} />
-                  </a>
-                ))}
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  className="w-10 h-10 rounded-lg bg-slate-800 hover:bg-primary-700 flex items-center justify-center text-slate-400 hover:text-white transition-all duration-200"
+                >
+                  <LinkedinIcon size={18} />
+                </a>
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                  className="w-10 h-10 rounded-lg bg-slate-800 hover:bg-primary-700 flex items-center justify-center text-slate-400 hover:text-white transition-all duration-200"
+                >
+                  <GithubIcon size={18} />
+                </a>
+                <a
+                  href="mailto:alexandra.blake@email.com"
+                  aria-label="Email"
+                  className="w-10 h-10 rounded-lg bg-slate-800 hover:bg-primary-700 flex items-center justify-center text-slate-400 hover:text-white transition-all duration-200"
+                >
+                  <Mail size={18} />
+                </a>
               </div>
             </div>
 
@@ -377,7 +385,6 @@ export default function HomePage() {
             ))}
           </div>
 
-          {/* Certifications strip */}
           <div className="text-center">
             <p className="text-slate-500 text-sm mb-5 uppercase tracking-wider font-medium">
               Certifications &amp; Credentials
@@ -432,8 +439,12 @@ export default function HomePage() {
                 </div>
                 <div className="p-6 flex flex-col flex-1">
                   <div className="flex items-center gap-4 text-xs text-slate-500 mb-3">
-                    <span className="flex items-center gap-1.5"><MapPin size={11} />{p.industry}</span>
-                    <span className="flex items-center gap-1.5"><Clock size={11} />{p.duration}</span>
+                    <span className="flex items-center gap-1.5">
+                      <MapPin size={11} />{p.industry}
+                    </span>
+                    <span className="flex items-center gap-1.5">
+                      <Clock size={11} />{p.duration}
+                    </span>
                   </div>
                   <h3 className="text-slate-100 font-semibold text-base mb-3 leading-snug">{p.title}</h3>
                   <p className="text-slate-400 text-sm leading-relaxed mb-4 flex-1">{p.description}</p>
@@ -450,7 +461,10 @@ export default function HomePage() {
                   </div>
                   <div className="flex flex-wrap gap-1.5">
                     {p.tools.map((t) => (
-                      <span key={t} className="px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-700/60 text-slate-300 border border-slate-600/40">
+                      <span
+                        key={t}
+                        className="px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-700/60 text-slate-300 border border-slate-600/40"
+                      >
                         {t}
                       </span>
                     ))}

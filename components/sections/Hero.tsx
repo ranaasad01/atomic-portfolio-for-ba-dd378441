@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Download, Briefcase as Linkedin, Code2 as Github, Mail } from 'lucide-react';
+import { ArrowRight, Download, Mail } from 'lucide-react';
+import { LinkedinIcon, GithubIcon } from "@/components/icons/SocialIcons";
 
 export default function Hero() {
   return (
@@ -27,7 +28,6 @@ export default function Hero() {
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           {/* Text Content */}
           <div className="flex-1 text-center lg:text-left">
-            {/* Status badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-900/30 border border-emerald-700/40 text-emerald-400 text-sm font-medium mb-6">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
               Available for new opportunities
@@ -88,24 +88,24 @@ export default function Hero() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-lg bg-slate-800 hover:bg-primary-700 flex items-center justify-center text-slate-400 hover:text-white transition-all duration-200"
                 aria-label="LinkedIn"
+                className="w-10 h-10 rounded-lg bg-slate-800 hover:bg-primary-700 flex items-center justify-center text-slate-400 hover:text-white transition-all duration-200"
               >
-                <Linkedin size={18} />
+                <LinkedinIcon size={18} />
               </a>
               <a
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-lg bg-slate-800 hover:bg-primary-700 flex items-center justify-center text-slate-400 hover:text-white transition-all duration-200"
                 aria-label="GitHub"
+                className="w-10 h-10 rounded-lg bg-slate-800 hover:bg-primary-700 flex items-center justify-center text-slate-400 hover:text-white transition-all duration-200"
               >
-                <Github size={18} />
+                <GithubIcon size={18} />
               </a>
               <a
                 href="mailto:alexandra.blake@email.com"
-                className="w-10 h-10 rounded-lg bg-slate-800 hover:bg-primary-700 flex items-center justify-center text-slate-400 hover:text-white transition-all duration-200"
                 aria-label="Email"
+                className="w-10 h-10 rounded-lg bg-slate-800 hover:bg-primary-700 flex items-center justify-center text-slate-400 hover:text-white transition-all duration-200"
               >
                 <Mail size={18} />
               </a>
@@ -117,12 +117,11 @@ export default function Hero() {
             <div className="relative">
               <div className="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-2xl overflow-hidden border-2 border-slate-700/50 shadow-2xl shadow-black/40">
                 <img
-                  src="https://media.licdn.com/dms/image/v2/D5603AQEmv5-GLEKD8Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1724442111375?e=2147483647&v=beta&t=y19lLQbq_0o7jOVuUpEj4qMo31BhQcYbqrhqkWBnyxU"
+                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=640&q=80"
                   alt="Alexandra Blake — Senior Business Analyst"
                   className="w-full h-full object-cover"
                 />
               </div>
-              {/* Floating badge */}
               <div className="absolute -bottom-4 -left-4 bg-slate-800 border border-slate-700/50 rounded-xl px-4 py-3 shadow-xl">
                 <div className="text-xs text-slate-400 mb-0.5">Current Role</div>
                 <div className="text-sm font-semibold text-slate-100">Meridian Financial</div>

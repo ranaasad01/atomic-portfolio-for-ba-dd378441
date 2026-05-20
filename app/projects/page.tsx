@@ -17,7 +17,15 @@ const stats = [
   { icon: Award, value: "0", label: "Critical Go-Live Defects" },
 ];
 
-const categories = ["All", "Digital Transformation", "Data & Analytics", "Process Improvement", "Systems Implementation", "Compliance & Risk", "Agile & Delivery"];
+const categories = [
+  "All",
+  "Digital Transformation",
+  "Data & Analytics",
+  "Process Improvement",
+  "Systems Implementation",
+  "Compliance & Risk",
+  "Agile & Delivery",
+];
 
 export default function ProjectsPage() {
   return (
@@ -58,7 +66,7 @@ export default function ProjectsPage() {
         </div>
       </div>
 
-      {/* Category Filter (visual only) */}
+      {/* Category Filter + Grid */}
       <SectionWrapper>
         <div className="flex flex-wrap gap-2 mb-10 justify-center">
           {categories.map((cat, i) => (
@@ -76,7 +84,6 @@ export default function ProjectsPage() {
           ))}
         </div>
 
-        {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
@@ -84,7 +91,7 @@ export default function ProjectsPage() {
         </div>
       </SectionWrapper>
 
-      {/* Approach Section */}
+      {/* BA Approach Section */}
       <SectionWrapper className="bg-slate-900/50">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-slate-50 mb-4">My BA Approach</h2>

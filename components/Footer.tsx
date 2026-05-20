@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { Mail, Briefcase as Linkedin, Code2 as Github, MessageCircle as Twitter } from 'lucide-react';
+import { Mail } from 'lucide-react';
+import { LinkedinIcon, GithubIcon, TwitterIcon } from "@/components/icons/SocialIcons";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -64,28 +65,28 @@ export default function Footer() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-primary-700 flex items-center justify-center text-slate-400 hover:text-white transition-all duration-200"
                 aria-label="LinkedIn"
+                className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-primary-700 flex items-center justify-center text-slate-400 hover:text-white transition-all duration-200"
               >
-                <Linkedin size={16} />
+                <LinkedinIcon size={16} />
               </a>
               <a
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-primary-700 flex items-center justify-center text-slate-400 hover:text-white transition-all duration-200"
                 aria-label="GitHub"
+                className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-primary-700 flex items-center justify-center text-slate-400 hover:text-white transition-all duration-200"
               >
-                <Github size={16} />
+                <GithubIcon size={16} />
               </a>
               <a
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-primary-700 flex items-center justify-center text-slate-400 hover:text-white transition-all duration-200"
                 aria-label="Twitter"
+                className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-primary-700 flex items-center justify-center text-slate-400 hover:text-white transition-all duration-200"
               >
-                <Twitter size={16} />
+                <TwitterIcon size={16} />
               </a>
             </div>
           </div>

@@ -1,7 +1,8 @@
 export const dynamic = "force-dynamic";
 import ContactForm from "@/components/sections/ContactForm";
 import SectionWrapper from "@/components/ui/SectionWrapper";
-import { Mail, Briefcase as Linkedin, Code2 as Github, MapPin, Clock, MessageSquare } from 'lucide-react';
+import { Mail, MapPin, Clock, MessageSquare } from 'lucide-react';
+import { LinkedinIcon, GithubIcon } from "@/components/icons/SocialIcons";
 
 export const metadata = {
   title: "Contact — Alexandra Blake",
@@ -15,18 +16,6 @@ const contactInfo = [
     label: "Email",
     value: "alexandra.blake@email.com",
     href: "mailto:alexandra.blake@email.com",
-  },
-  {
-    icon: Linkedin,
-    label: "LinkedIn",
-    value: "linkedin.com/in/alexandrablake",
-    href: "https://linkedin.com",
-  },
-  {
-    icon: Github,
-    label: "GitHub",
-    value: "github.com/alexandrablake",
-    href: "https://github.com",
   },
   {
     icon: MapPin,
@@ -107,8 +96,6 @@ export default function ContactPage() {
                     {item.href ? (
                       <a
                         href={item.href}
-                        target={item.href.startsWith("http") ? "_blank" : undefined}
-                        rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
                         className="text-slate-300 text-sm hover:text-primary-400 transition-colors"
                       >
                         {item.value}
@@ -119,6 +106,40 @@ export default function ContactPage() {
                   </div>
                 </div>
               ))}
+
+              {/* Social links */}
+              <div className="flex items-start gap-4">
+                <div className="w-9 h-9 rounded-lg bg-slate-800 border border-slate-700/40 flex items-center justify-center flex-shrink-0">
+                  <LinkedinIcon size={16} className="text-primary-400" />
+                </div>
+                <div>
+                  <div className="text-slate-500 text-xs mb-0.5">LinkedIn</div>
+                  <a
+                    href="https://linkedin.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-slate-300 text-sm hover:text-primary-400 transition-colors"
+                  >
+                    linkedin.com/in/alexandrablake
+                  </a>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="w-9 h-9 rounded-lg bg-slate-800 border border-slate-700/40 flex items-center justify-center flex-shrink-0">
+                  <GithubIcon size={16} className="text-primary-400" />
+                </div>
+                <div>
+                  <div className="text-slate-500 text-xs mb-0.5">GitHub</div>
+                  <a
+                    href="https://github.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-slate-300 text-sm hover:text-primary-400 transition-colors"
+                  >
+                    github.com/alexandrablake
+                  </a>
+                </div>
+              </div>
             </div>
 
             {/* Response time */}

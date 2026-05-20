@@ -38,7 +38,7 @@ export default function About() {
         <div className="relative order-2 lg:order-1">
           <div className="relative rounded-2xl overflow-hidden border border-slate-700/50 shadow-2xl shadow-black/30">
             <img
-              src="https://media.licdn.com/dms/image/v2/D4E03AQG0lV4B9W_GLA/profile-displayphoto-scale_200_200/B4EZh0c.h.HIAc-/0/1754300411375?e=2147483647&v=beta&t=KY1MskR0t7RwnUabwTKI9ovuN2Bk3p6Dlz-tE8PyPSg"
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&auto=format&fit=crop&q=80"
               alt="Alexandra working on business analysis"
               className="w-full h-80 lg:h-96 object-cover"
             />
