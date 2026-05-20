@@ -117,7 +117,7 @@ export default function Hero() {
             <div className="relative">
               <div className="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-2xl overflow-hidden border-2 border-slate-700/50 shadow-2xl shadow-black/40">
                 <img
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=640&q=80"
+                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=640&q=80"
                   alt="Alexandra Blake — Senior Business Analyst"
                   className="w-full h-full object-cover"
                 />

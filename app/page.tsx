@@ -110,7 +110,7 @@ const testimonials = [
     name: "Sarah Chen",
     role: "VP of Digital Transformation",
     company: "Meridian Financial Group",
-    avatar: "https://imageio.forbes.com/specials-images/imageserve/5c928fa04bbe6f52641ab341/0x0.jpg?format=jpg&crop=2124,2123,x980,y756,safe&height=416&width=416&fit=bounds",
+    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
     quote:
       "Alexandra is the most thorough and collaborative BA I've worked with in 15 years. Her ability to bridge the gap between technical teams and business stakeholders is exceptional. The CRM migration project would not have succeeded without her meticulous requirements work.",
     relationship: "Direct Manager",
@@ -120,7 +120,7 @@ const testimonials = [
     name: "Marcus Williams",
     role: "Head of Product",
     company: "Nexus Technology Solutions",
-    avatar: "https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3122882.png&w=350&h=254",
+    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
     quote:
       "Working with Alex transformed how our product team operates. She introduced story mapping and backlog structuring practices that we still use today. Her user stories are always precise, testable, and tied to real business value.",
     relationship: "Product Partner",
@@ -130,7 +130,7 @@ const testimonials = [
     name: "Dr. Priya Nair",
     role: "Chief Data Officer",
     company: "Meridian Financial Group",
-    avatar: "https://doximity-res.cloudinary.com/images/f_auto,q_auto,t_public_profile_photo_320x320/pcgmylcyzjbevqvtb8rw/priya-nair-md-chicago-il.jpg",
+    avatar: "https://randomuser.me/api/portraits/women/68.jpg",
     quote:
       "Alex led requirements definition for our supply chain analytics platform and delivered a data dictionary and KPI framework that became the gold standard for all subsequent data projects. Her SQL skills and data literacy set her apart from most BAs.",
     relationship: "Executive Sponsor",
@@ -140,7 +140,7 @@ const testimonials = [
     name: "James O'Brien",
     role: "Engineering Lead",
     company: "Nexus Technology Solutions",
-    avatar: "https://static01.nyt.com/images/2023/02/20/multimedia/20dc-veritas-vpzc/20dc-veritas-vpzc-mediumSquareAt3X.jpg",
+    avatar: "https://randomuser.me/api/portraits/men/76.jpg",
     quote:
       "As an engineer, I've worked with many BAs who write vague requirements. Alex is the opposite — her acceptance criteria are crystal clear, her edge cases are thought through, and she genuinely understands technical constraints.",
     relationship: "Cross-functional Colleague",
@@ -258,7 +258,7 @@ export default function HomePage() {
             <div className="flex-shrink-0 relative">
               <div className="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-2xl overflow-hidden border-2 border-slate-700/50 shadow-2xl shadow-black/40">
                 <img
-                  src="https://media.licdn.com/dms/image/v2/D5603AQEmv5-GLEKD8Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1724442111375?e=2147483647&v=beta&t=y19lLQbq_0o7jOVuUpEj4qMo31BhQcYbqrhqkWBnyxU"
+                  src="https://randomuser.me/api/portraits/women/65.jpg"
                   alt="Alexandra Blake — Senior Business Analyst"
                   className="w-full h-full object-cover"
                 />
@@ -283,7 +283,7 @@ export default function HomePage() {
           <div className="relative order-2 lg:order-1">
             <div className="relative rounded-2xl overflow-hidden border border-slate-700/50 shadow-2xl shadow-black/30">
               <img
-                src="https://media.licdn.com/dms/image/v2/D4E03AQG0lV4B9W_GLA/profile-displayphoto-scale_200_200/B4EZh0c.h.HIAc-/0/1754300411375?e=2147483647&v=beta&t=KY1MskR0t7RwnUabwTKI9ovuN2Bk3p6Dlz-tE8PyPSg"
+                src="https://randomuser.me/api/portraits/women/55.jpg"
                 alt="Alexandra working on business analysis"
                 className="w-full h-80 lg:h-96 object-cover"
               />
@@ -558,16 +558,4 @@ export default function HomePage() {
                 <a
                   href="/resume.pdf"
                   download
-                  className="inline-flex items-center gap-2 px-7 py-3.5 border border-slate-600 hover:border-primary-500 text-slate-300 hover:text-primary-400 font-medium rounded-lg transition-all duration-200"
-                >
-                  <Download size={16} /> Download Resume
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    </div>
-  );
-}
+                  className="inline-flex
